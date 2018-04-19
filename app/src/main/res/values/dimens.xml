@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textview_leftpadding">16dp</dimen>
+    <dimen name="textview_toppadding">16dp</dimen>
+    <dimen name="musicinfo_leftpadding">16dp</dimen>
+    <dimen name="musicinfo_toppadding">8dp</dimen>
+    <dimen name="music_textsize">16sp</dimen>
+    <dimen name="musicinfo_textsize">14sp</dimen>
+</resources>
