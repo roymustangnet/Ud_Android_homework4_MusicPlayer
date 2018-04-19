@@ -18,7 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/musicinfo_leftpadding"
-        android:paddingTop="@dimen/musicinfo_toppadding">
+        android:paddingTop="@dimen/musicinfo_toppadding"
+        android:paddingBottom="@dimen/musicinfo_bottompadding">
         <TextView
             android:id="@+id/singer"
             tools:text="赵雷"
@@ -27,7 +28,7 @@
             android:textSize="@dimen/musicinfo_textsize"
             />
         <TextView
-            android:text="-"
+            android:text="  -  "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/musicinfo_textsize"/>
