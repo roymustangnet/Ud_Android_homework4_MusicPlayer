@@ -1,6 +1,7 @@
 package com.example.android.musicplayer;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,13 @@ public class MusicItemsAdapter extends ArrayAdapter<MusicItem> {
         singer.setText(music.getSinger());
         TextView album = listItemView.findViewById(R.id.album);
         album.setText(music.getAlbum());
+
+        listItemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(,);
+            }
+        });
 
         return listItemView;
     }
