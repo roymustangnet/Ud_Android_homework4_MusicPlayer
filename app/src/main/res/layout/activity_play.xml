@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".PlayActivity">
-    <TextView
-        tools:text="Eyes on me"
-        android:id="@+id/music_name_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/songname_textview"
-        android:gravity="center"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -23,13 +16,33 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:layout_width="@dimen/album_width"
-            android:layout_height="@dimen/album_height" />
+            android:layout_height="@dimen/album_height"
+            tools:src="@drawable/albums_feiniao"/>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </ScrollView>
     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <TextView
+            tools:text="Eyes on me"
+            android:id="@+id/music_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/songname_textview"
+            />
+        <TextView
+            android:id="@+id/singer_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/singer"
+            tools:text="任贤齐"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_weight="0"
         android:layout_width="match_parent"
@@ -41,9 +54,7 @@
         <ImageView
             android:layout_width="@dimen/np_button_size"
             android:layout_height="@dimen/np_button_size"
-
             android:src="@drawable/previous"
-
             />
         <ImageView
             android:layout_width="@dimen/play_button_size"
@@ -51,6 +62,7 @@
             android:layout_marginLeft="@dimen/play_button_margin"
             android:layout_height="@dimen/play_button_size"
             android:src="@drawable/play"
+            android:id="@+id/play_button"
             />
         <ImageView
             android:layout_width="@dimen/np_button_size"
