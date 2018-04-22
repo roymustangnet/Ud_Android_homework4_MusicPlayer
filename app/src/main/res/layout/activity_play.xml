@@ -8,16 +8,22 @@
     tools:context=".PlayActivity">
     <TextView
         tools:text="Eyes on me"
+        android:id="@+id/music_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/songname_textview"
         android:gravity="center"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
         <ImageView
-            tools:src=""
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:id="@+id/album_imageview"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/album_width"
+            android:layout_height="@dimen/album_height" />
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -25,17 +31,31 @@
         </ScrollView>
     </RelativeLayout>
     <LinearLayout
+        android:layout_weight="0"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
+        android:layout_height="@dimen/bottom_height"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/bottom_marginBottom"
+        >
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="@dimen/np_button_size"
+            android:layout_height="@dimen/np_button_size"
+
+            android:src="@drawable/previous"
+
+            />
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="@dimen/play_button_size"
+            android:layout_marginRight="@dimen/play_button_margin"
+            android:layout_marginLeft="@dimen/play_button_margin"
+            android:layout_height="@dimen/play_button_size"
+            android:src="@drawable/play"
+            />
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="@dimen/np_button_size"
+            android:layout_height="@dimen/np_button_size"
+            android:src="@drawable/next"/>
     </LinearLayout>
+
 </LinearLayout>

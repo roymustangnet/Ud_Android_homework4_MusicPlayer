@@ -33,13 +33,6 @@ public class MusicItemsAdapter extends ArrayAdapter<MusicItem> {
         TextView album = listItemView.findViewById(R.id.album);
         album.setText(music.getAlbum());
 
-        listItemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent intent = new Intent(,);
-            }
-        });
-
         return listItemView;
     }
 }
