@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".PlayActivity">
+    <TextView
+        android:text="@string/title_playactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/textview_toppadding"
+        android:paddingBottom="@dimen/musicinfo_bottompadding"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/title_size"
+        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

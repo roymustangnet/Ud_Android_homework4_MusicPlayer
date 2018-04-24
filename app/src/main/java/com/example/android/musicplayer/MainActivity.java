@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        setTitle("音乐库");
         final ArrayList<MusicItem> musics = new ArrayList<MusicItem>();
         final String[] musicnames = {"WILL", "海阔天空","红豆","女驸马","青青河边草","生活不止眼前的苟且","爱的路上只有我和你","大海","大约在冬季"};
         String[] singers = {"米仓千寻", "Beyond","王菲","严凤英","高胜美","许巍","任贤齐","张雨生","齐秦"};

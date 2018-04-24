@@ -18,19 +18,10 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
         displayData();
-
-        ImageView playImageView = (ImageView) findViewById(R.id.play_button);
-        playImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
     }
 
     private void displayData(){
-        setTitle("Music Details");
+        setTitle("音乐详情");
         Intent intent = getIntent();
         String musicName = intent.getStringExtra("musicName");
         String singer = intent.getStringExtra("singer");

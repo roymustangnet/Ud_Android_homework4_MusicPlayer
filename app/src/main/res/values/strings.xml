@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Music Player</string>
+    <string name='title_mainactivity'>音乐列表</string>
+    <string name='title_playactivity'>音乐详情</string>
 </resources>

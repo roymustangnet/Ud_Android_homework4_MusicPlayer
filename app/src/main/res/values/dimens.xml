@@ -19,5 +19,7 @@
     <dimen name="play_button_margin">20dp</dimen>
     <dimen name="np_button_size">70dp</dimen>
 
+    <dimen name="title_size">20sp</dimen>
+
 
 </resources>
